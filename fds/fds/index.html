@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pricing - Coding Power</title>
+</head>
+<body>
+    
+   <div class="container">
+       <div class="card">
+           <div class="card-title">
+               <h2>Gratis</h2>
+               
+               <p><i class="fa fa-brazilian-real-sign"></i><span>0</span>/mês</p>
+           </div>
+           <div class="card-content">
+               <br>
+               <ul>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+               </ul>
+               <br>
+               <button onclick="mostrarCaixaCompra('Gratis')"><b>SAIBA MAIS</b></button>
+           </div>
+       </div>
+       <div class="card">
+           <div class="card-title2">
+               <h2>Premium</h2>
+               <p><i class="fa fa-brazilian-real-sign"></i><span>9,99</span>/mês</p>
+           </div>
+           <div class="card-content">
+               <br>
+               <ul>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+                   <li><i class="fa fa-check-circle"></i>teste</li>
+                   <li><i class="fa fa-times-circle"></i>teste</li>
+               </ul>
+               <br>
+               <button onclick="mostrarCaixaCompra('Premium')"><b>SAIBA MAIS</b></button>
+           </div>
+       </div>
+   </div>
+
+   <div id="caixa-compra" class="caixa-compra">
+       <div class="caixa-compra-conteudo">
+           <span class="fechar" onclick="fecharCaixaCompra()">&times;</span>
+           <h2 id="caixa-compra-titulo"></h2>
+           <p id="caixa-compra-descricao"></p>
+           <button>Comprar</button>
+       </div>
+   </div>
+
+   <script src="./script.js"></script>  
+
+</body>
+</html>
